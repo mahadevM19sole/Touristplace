@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+
+    <h2>Confirm Tourist Place</h2>
+    
+    
+    <button onclick="myFunction()">Select</button>
+    <select>
+        <option value="Mu">Mumbai</option>
+        <option value="Pu">Pune</option>
+        <option value="Go">Gova</option>
+        </select>
+    
+    <p id="demo"> Your  Tourist Place in India!</p>
+    
+    <script>
+    function myFunction() {
+      var txt;
+      if (confirm("Confirm Tourist Place Do you selected!")) {
+        txt = " Your Tourist Place is confirm!";
+      } else {
+        txt = "Your Tourist Place is Cancel!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
+    
+    
+    </body>
+    </html>
